@@ -21,7 +21,6 @@ public class User extends AbstractModel {
             mappedBy = "user",
             fetch = FetchType.EAGER
     )
-
     private List<Wishes> bucketList = new LinkedList<>();
 
 
