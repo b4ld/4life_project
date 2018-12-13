@@ -1,0 +1,14 @@
+
+
+INSERT INTO user(ID, CREATIONTIME, UPDATETIME, VERSION, NAME, EMAIL, LIFEPOINT,AGE,GENDER,DESCRIPTION) VALUES
+  (1, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0, 'Rui','mail@gmail.com', 2 , 18, 'M', 'Gosto muito de cavalos'),
+  (2, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0, 'Abilio','mail@gmail.com', 3 , 30, 'M', 'Gosto muito de cavalos'),
+  (3, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0, 'Pedro','mail@gmail.com', 4 , 27, 'F', 'Gosto muito de cavalos'),
+  (4, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0, 'Goreti','mail@gmail.com', 5 , 4, 'F', 'Gosto muito de cavalos'),
+
+INSERT INTO wishes(ID, CREATIONTIME, UPDATETIME, VERSION, WISH) VALUES
+  (1, TIMESTAMP '2017-10-10 10:18:53.819', TIMESTAMP '2017-10-10 10:22:58.578', 'comer'),
+  (2, TIMESTAMP '2017-10-10 10:23:02.194', TIMESTAMP '2017-10-10 10:23:19.801', 'beber'),
+  (3, TIMESTAMP '2017-10-10 14:30:37.769', TIMESTAMP '2017-10-10 14:30:43.042', 'cantar a corolina'),
+  (4, TIMESTAMP '2017-10-10 14:30:38.426', TIMESTAMP '2017-10-10 14:30:46.471', 'ir nadar com piranhas'),
+  (5, TIMESTAMP '2017-10-10 14:30:37.769', TIMESTAMP '2017-10-10 14:30:43.042', 'subir o kilingmanjaro'),

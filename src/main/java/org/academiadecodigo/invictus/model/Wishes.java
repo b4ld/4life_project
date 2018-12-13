@@ -3,8 +3,10 @@ package org.academiadecodigo.invictus.model;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "wishes")
 public class Wishes extends AbstractModel {
 
 
@@ -22,7 +24,7 @@ public class Wishes extends AbstractModel {
         return user;
     }
 
-    public void setUserModel(User userModel) {
+    public void setUserModel(User user) {
         this.user = user;
     }
 
