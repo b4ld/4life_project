@@ -24,6 +24,12 @@ public class UserDto {
     private Integer lifePoint;
 
     private Integer age;
+    @NotNull(message = "description is mandatory")
+    @NotBlank(message = "description is mandatory")
+    @Size(min = 20, max = 150)
+    private String description;
+
+
     private String gender;
     private List<Wishes> bucketList = new LinkedList<>();
 
@@ -82,6 +88,14 @@ public class UserDto {
 
     public void setBucketList(List<Wishes> bucketList) {
         this.bucketList = bucketList;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     @Override

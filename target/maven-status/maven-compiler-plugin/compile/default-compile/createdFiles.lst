@@ -1,5 +1,5 @@
+org/academiadecodigo/invictus/converter/UserToDto.class
 org/academiadecodigo/invictus/dao/GenericJpaDao.class
-org/academiadecodigo/invictus/controller/MainController.class
 org/academiadecodigo/invictus/controller/UserController.class
 org/academiadecodigo/invictus/dto/UserDto.class
 org/academiadecodigo/invictus/dao/UserDao.class
@@ -11,7 +11,6 @@ org/academiadecodigo/invictus/dao/WishesDao.class
 org/academiadecodigo/invictus/converter/DtoToUser.class
 org/academiadecodigo/invictus/dao/JpaUserDao.class
 org/academiadecodigo/invictus/model/Model.class
-org/academiadecodigo/invictus/converter/UsertoDto.class
 org/academiadecodigo/invictus/services/UserService.class
 org/academiadecodigo/invictus/services/UserServiceImpl.class
 org/academiadecodigo/invictus/dao/Dao.class

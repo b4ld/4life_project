@@ -14,6 +14,7 @@ public class User extends AbstractModel {
     private Integer lifePoint;
     private Integer age;
     private String gender;
+    private String description;
 
     @OneToMany(
             cascade = {CascadeType.ALL},
@@ -51,6 +52,14 @@ public class User extends AbstractModel {
 
     public Integer getLifePoint() {
         return lifePoint;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public void setLifePoint(Integer lifePoint) {

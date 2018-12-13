@@ -11,7 +11,7 @@ public class Wishes extends AbstractModel {
     private String wish;
 
     @ManyToOne
-    private User userModel;
+    private User user;
 
 
     public Wishes() {
@@ -19,11 +19,11 @@ public class Wishes extends AbstractModel {
 
 
     public User getUserModel() {
-        return userModel;
+        return user;
     }
 
     public void setUserModel(User userModel) {
-        this.userModel = userModel;
+        this.user = user;
     }
 
     public String getWish() {
