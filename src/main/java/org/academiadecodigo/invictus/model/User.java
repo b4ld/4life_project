@@ -15,9 +15,6 @@ public class User extends AbstractModel {
     private Integer age;
     private String gender;
 
-
-
-
     @OneToMany(
             cascade = {CascadeType.ALL},
             orphanRemoval = true,
