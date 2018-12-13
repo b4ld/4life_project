@@ -1,6 +1,6 @@
 package org.academiadecodigo.invictus.model;
 
-public interface UserModel {
+public interface Model {
 
 
     Integer getId();
