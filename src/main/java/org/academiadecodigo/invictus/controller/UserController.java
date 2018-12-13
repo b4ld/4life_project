@@ -55,13 +55,12 @@ public class UserController {
     }
 
 
-
-
     @GetMapping(path = "/{id}/edit")
     public String editUser(@PathVariable Integer id, Model model){
+
         model.addAttribute("user",usertoDto.convert(userService.get(id)));
 
-        return "add-update";
+        return "form";
 
     }
 
@@ -73,14 +72,21 @@ public class UserController {
     }
 
 
-
-
     @PostMapping(path = "/form")
     public String submit(@ModelAttribute("user") UserDto userDto){
 
         return"redirect:/user";
 
     }
+
+    @GetMapping(path ="/user/list")
+    public String userList(Model model){
+        model.addAttribute("user", usertoDto.convertToList(userService.userList()));
+
+        return "userList";
+    }
+
+
 
 
 
