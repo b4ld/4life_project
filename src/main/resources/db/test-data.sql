@@ -1,8 +1,8 @@
 
 
 INSERT INTO user(ID, CREATIONTIME, UPDATETIME, VERSION, NAME, EMAIL, LIFEPOINT,AGE,GENDER,DESCRIPTION) VALUES
-  (1, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0, 'Freddie Mercury','frediewithlove@gmail.com', 2 , 45, 'M', 'I love my little sister, I hope she gets into the university'),
-  (2, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0, 'Marlon Brandon','brando@gmail.com', 3 , 80, 'M', 'I love astronomy, I can take you to see the stars'),
+  (1, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0, 'Freddie Mercury','frediewithlove@gmail.com', 2 , 45, 'M', 'I was born in Zanzibar. Mad, isn´t'),
+  (2, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0, 'Marlon Brando','brando@gmail.com', 3 , 80, 'M', 'I love astronomy, I can take you to see the stars'),
   (3, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0, 'Amy Winehouse','camdemtown@gmail.com', 4 , 27, 'F', 'I once swan naked in an waterfall, and I want to do it again'),
   (4, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0, 'Janes Joplin','buymeamercedesbenz@gmail.com', 5 , 27, 'F', 'I love horses, I ride my favorite one everytime I´m out of the hospital.');
 
