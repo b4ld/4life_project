@@ -107,16 +107,16 @@ public class UserController {
 
     @GetMapping(path = "/user/list")
     public String userList(Model model) {
-        model.addAttribute("user", usertoDto.convertToList(userService.userList()));
 
+        model.addAttribute("user", usertoDto.convertToList(userService.userList()));
         return "userList";
     }
 
 
-   // @PostMapping(path = "/user/list")
-   // public void
+   @PostMapping(path = "/user/list")
+   public String match(@PathVariable Integer userId, @PathVariable Integer matchId){
 
-
-
-
+       userService.testMatch(userId, matchId);
+       return "redirect:/user/list";
+   }
 }
