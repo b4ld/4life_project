@@ -17,4 +17,6 @@ public interface UserService {
 
     boolean testMatch(Integer userId,Integer matchId);
 
+    User findEmail(String email);
+
 }

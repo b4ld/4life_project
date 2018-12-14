@@ -10,4 +10,10 @@ public class JpaUserDao extends GenericJpaDao<User> implements UserDao {
         super(User.class);
     }
 
+
+    public User findbyEmail(String email){
+      return em.find(model,email);
+
+    }
+
 }

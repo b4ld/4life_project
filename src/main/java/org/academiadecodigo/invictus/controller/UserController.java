@@ -9,6 +9,7 @@ import org.academiadecodigo.invictus.services.WishesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -82,25 +83,47 @@ public class UserController {
     }
 
     @PostMapping(path = "/user/form")
-    public String submitForm(@ModelAttribute("user") UserDto userDto){
+    public String submitForm(@Valid @ModelAttribute("user") UserDto userDto, BindingResult bindingResult) {
 
-        return"redirect:/user/list/";
-
-    }
-
-    @GetMapping(path = "/user/login")
-    public String login (Model model){
-        model.addAttribute("user",new UserDto());
-
-        return "login";
-    }
-
-    @PostMapping(path = "/user/login")
-    public String submitLogin(@ModelAttribute("user") UserDto userDto){
+        if (bindingResult.hasErrors()) {
+            return  "form";
+        }
 
         return "redirect:/user/list/";
 
     }
+
+    @GetMapping(path = "/user/login")
+    public String login(Model model) {
+
+
+
+        model.addAttribute("user", new UserDto());
+
+
+        return "login";
+    }
+
+    @PostMapping(path = "/user/login/")
+    public String submitLogin(@Valid @ModelAttribute("user") UserDto userDto, BindingResult bindingResult) {
+
+        if(bindingResult.hasErrors()){
+            return "login";
+        }
+
+       /* User user = userService.get(id);
+
+        if (user == null) {
+            //exception
+            return "login";*/
+
+
+        //pedir ajuda para randerizar a view
+
+        return "redirect:/user/list/";
+
+    }
+
 
     @GetMapping(path = "/user/list")
     public String userList(Model model) {
