@@ -54,17 +54,18 @@ public class UserController {
         return "index";
     }
 
-    @GetMapping(path = "/user/{id}")
+    /*@GetMapping(path = "/user/{id}")
     public String showUser(@PathVariable Integer id, Model model) {
 
         User user = userService.get(id);
         model.addAttribute("user", usertoDto.convert(user));
         return "user";
-    }
+    }*/
 
 
-    @GetMapping(path = "/user/{id}/edit")
+    @GetMapping(path = "/user/edit/{id}")
     public String editUser(@PathVariable Integer id, Model model) {
+
 
         model.addAttribute("user", usertoDto.convert(userService.get(id)));
         model.addAttribute("wishes", wishesService.wishesList());
@@ -112,6 +113,7 @@ public class UserController {
         return "userList";
     }
 
+<<<<<<< Updated upstream
 
    @PostMapping(path = "/user/list")
    public String match(@PathVariable Integer userId, @PathVariable Integer matchId){
@@ -119,4 +121,6 @@ public class UserController {
        userService.testMatch(userId, matchId);
        return "redirect:/user/list";
    }
+=======
+>>>>>>> Stashed changes
 }
