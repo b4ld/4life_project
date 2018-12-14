@@ -2,6 +2,7 @@
 /Users/codecadet/pcdev/4life_project/src/main/java/org/academiadecodigo/invictus/dto/UserDto.java
 /Users/codecadet/pcdev/4life_project/src/main/java/org/academiadecodigo/invictus/services/UserService.java
 /Users/codecadet/pcdev/4life_project/src/main/java/org/academiadecodigo/invictus/model/Model.java
+/Users/codecadet/pcdev/4life_project/src/main/java/org/academiadecodigo/invictus/services/WishesImpl.java
 /Users/codecadet/pcdev/4life_project/src/main/java/org/academiadecodigo/invictus/services/UserServiceImpl.java
 /Users/codecadet/pcdev/4life_project/src/main/java/org/academiadecodigo/invictus/converter/DtoToUser.java
 /Users/codecadet/pcdev/4life_project/src/main/java/org/academiadecodigo/invictus/converter/UserToDto.java
@@ -9,6 +10,7 @@
 /Users/codecadet/pcdev/4life_project/src/main/java/org/academiadecodigo/invictus/dao/JpaUserDao.java
 /Users/codecadet/pcdev/4life_project/src/main/java/org/academiadecodigo/invictus/dao/Dao.java
 /Users/codecadet/pcdev/4life_project/src/main/java/org/academiadecodigo/invictus/model/Wishes.java
+/Users/codecadet/pcdev/4life_project/src/main/java/org/academiadecodigo/invictus/services/WishesService.java
 /Users/codecadet/pcdev/4life_project/src/main/java/org/academiadecodigo/invictus/model/AbstractModel.java
 /Users/codecadet/pcdev/4life_project/src/main/java/org/academiadecodigo/invictus/dao/UserDao.java
 /Users/codecadet/pcdev/4life_project/src/main/java/org/academiadecodigo/invictus/dao/JpaWishesDao.java

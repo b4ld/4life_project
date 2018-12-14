@@ -1,49 +1,25 @@
-html {
-    padding: 30px;
-}
-
 body {
     font-family: 'Text Me One', sans-serif;
 }
 
-.upper {
-    height: 100px;
-}
-
-.img-logo {
-    margin-top: 15%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
-}
-
-.bottom {
+header {
     width: auto;
-    margin-top: 400px;
+    height: 100px;
+    padding: 10px;
 }
 
-.btn {
-    color: black;
-    background-color: transparent;
-    border-color: black;
+.navbar {
+    overflow: hidden;
 }
 
-.btn:hover {
-    border-color: black;
-    background-color: black;
-    color: white;
+.couple1 {
+    width: 100%;
 }
 
-.btn:active {
-    background-color: black;
-    transform: translateY(4px);
+.behappy {
+    width: 100%;
 }
 
-.create-btn {
-    float: left;
-}
-
-.login-btn {
-    float: right;
+.couple2 {
+    width: 100%;
 }

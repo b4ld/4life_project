@@ -1,8 +1,10 @@
 org/academiadecodigo/invictus/converter/UserToDto.class
+org/academiadecodigo/invictus/services/WishesService.class
 org/academiadecodigo/invictus/dao/GenericJpaDao.class
 org/academiadecodigo/invictus/controller/UserController.class
 org/academiadecodigo/invictus/dto/UserDto.class
 org/academiadecodigo/invictus/dao/UserDao.class
+org/academiadecodigo/invictus/services/WishesImpl.class
 org/academiadecodigo/invictus/model/User.class
 org/academiadecodigo/invictus/model/AbstractModel.class
 org/academiadecodigo/invictus/model/Wishes.class

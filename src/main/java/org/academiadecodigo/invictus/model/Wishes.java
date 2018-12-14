@@ -2,6 +2,7 @@ package org.academiadecodigo.invictus.model;
 
 
 import javax.persistence.*;
+import java.util.LinkedList;
 import java.util.List;
 
 @Entity
@@ -12,12 +13,8 @@ public class Wishes extends AbstractModel {
     private String wish;
 
 
-    @ManyToMany(
-            cascade = {CascadeType.ALL},
-            mappedBy = "wishes",
-            fetch = FetchType.LAZY
-    )
-    private List<User> userList;
+    @ManyToMany
+    private List<User> userList = new LinkedList<>();
 
     private void addUser(User user){
         userList.add(user);

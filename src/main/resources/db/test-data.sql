@@ -1,10 +1,10 @@
 
 
 INSERT INTO user(ID, CREATIONTIME, UPDATETIME, VERSION, NAME, EMAIL, LIFEPOINT,AGE,GENDER,DESCRIPTION) VALUES
-  (1, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0, 'Rui','mail@gmail.com', 2 , 18, 'M', 'I love my little sister, I hope she gets into the university'),
-  (2, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0, 'Abilio','mail@gmail.com', 3 , 30, 'M', 'I love astronomy, I can take you to see the stars'),
-  (3, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0, 'Joana','mail@gmail.com', 4 , 27, 'F', 'I once swan naked in an waterfall, and I want to do it again'),
-  (4, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0, 'Goreti','mail@gmail.com', 5 , 4, 'F', 'I love horses, I ride my favorite one everytime I´m out of the hospital.');
+  (1, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0, 'Rui','rui@gmail.com', 2 , 18, 'M', 'I love my little sister, I hope she gets into the university'),
+  (2, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0, 'Abilio','abilio@gmail.com', 3 , 30, 'M', 'I love astronomy, I can take you to see the stars'),
+  (3, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0, 'Joana','joana@gmail.com', 4 , 27, 'F', 'I once swan naked in an waterfall, and I want to do it again'),
+  (4, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0, 'Goreti','goreti@gmail.com', 5 , 4, 'F', 'I love horses, I ride my favorite one everytime I´m out of the hospital.');
 
 INSERT INTO wishes(ID, CREATIONTIME, UPDATETIME, VERSION, WISH) VALUES
   (1, TIMESTAMP '2017-10-10 10:18:53.819', TIMESTAMP '2017-10-10 10:22:58.578', 0, 'Travel to Paris or Venice'),
