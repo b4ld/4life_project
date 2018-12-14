@@ -1,4 +1,4 @@
-package org.academiadecodigo.invictus.model;
+package org.academiadecodigo.invictus.persistence.model;
 
 
 import javax.persistence.*;
@@ -10,7 +10,9 @@ import java.util.List;
 public class User extends AbstractModel {
 
     private String name;
+    @Column(unique = true)
     private String email;
+
     private Integer lifePoint;
     private Integer age;
     private String gender;
@@ -23,9 +25,12 @@ public class User extends AbstractModel {
     )
     private List<Wishes> bucketList = new LinkedList<>();
 
-    /*private List<User> userFriend = new LinkedList<>();
+    @OneToMany
+    private List<User> userFriend = new LinkedList<>();
 
+    @OneToMany
     private List<User> request = new LinkedList<>();
+
 
 
     public void addWish(Wishes wishes){
@@ -51,7 +56,7 @@ public class User extends AbstractModel {
     public void setRequest(List<User> request) {
         this.request = request;
     }
-*/
+
     public String getName() {
         return name;
     }

@@ -1,6 +1,6 @@
-package org.academiadecodigo.invictus.dao;
+package org.academiadecodigo.invictus.persistence.dao;
 
-import org.academiadecodigo.invictus.model.Wishes;
+import org.academiadecodigo.invictus.persistence.model.Wishes;
 import org.springframework.stereotype.Repository;
 
 @Repository

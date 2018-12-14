@@ -1,13 +1,6 @@
 package org.academiadecodigo.invictus.dto;
 
-import org.academiadecodigo.invictus.model.Wishes;
-
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
-import java.util.LinkedList;
-import java.util.List;
+import javax.validation.constraints.*;
 
 public class UserDto {
 
@@ -18,12 +11,16 @@ public class UserDto {
     private String name;
 
     @Email
+    @NotBlank(message = "email is mandatory")
+    @NotNull(message = "email is mandatory")
     private String email;
 
-    @Size(min = 1, max = 5)
     private Integer lifePoint;
 
+
+    //@Pattern(regexp = "^\\+?[0-9]*$", message = "age must be between 18 and 99.")
     private Integer age;
+
     @NotNull(message = "description is mandatory")
     @NotBlank(message = "description is mandatory")
     @Size(min = 20, max = 150)

@@ -1,6 +1,6 @@
 package org.academiadecodigo.invictus.services;
 
-import org.academiadecodigo.invictus.model.Wishes;
+import org.academiadecodigo.invictus.persistence.model.Wishes;
 
 import java.util.List;
 

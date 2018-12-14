@@ -1,7 +1,7 @@
 package org.academiadecodigo.invictus.converter;
 
 import org.academiadecodigo.invictus.dto.UserDto;
-import org.academiadecodigo.invictus.model.User;
+import org.academiadecodigo.invictus.persistence.model.User;
 import org.academiadecodigo.invictus.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;

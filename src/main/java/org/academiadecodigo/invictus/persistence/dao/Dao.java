@@ -1,6 +1,6 @@
-package org.academiadecodigo.invictus.dao;
+package org.academiadecodigo.invictus.persistence.dao;
 
-import org.academiadecodigo.invictus.model.Model;
+import org.academiadecodigo.invictus.persistence.model.Model;
 
 import java.util.List;
 

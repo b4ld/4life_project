@@ -1,4 +1,4 @@
-package org.academiadecodigo.invictus.model;
+package org.academiadecodigo.invictus.persistence.model;
 
 
 import javax.persistence.*;
