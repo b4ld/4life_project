@@ -3,7 +3,7 @@ package org.academiadecodigo.invictus.controller;
 import org.academiadecodigo.invictus.converter.DtoToUser;
 import org.academiadecodigo.invictus.converter.UserToDto;
 import org.academiadecodigo.invictus.dto.UserDto;
-import org.academiadecodigo.invictus.model.User;
+import org.academiadecodigo.invictus.persistence.model.User;
 import org.academiadecodigo.invictus.services.UserService;
 import org.academiadecodigo.invictus.services.WishesService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -58,9 +58,7 @@ public class UserController {
     public String showUser(@PathVariable Integer id, Model model) {
 
         User user = userService.get(id);
-
         model.addAttribute("user", usertoDto.convert(user));
-
         return "user";
     }
 
@@ -70,15 +68,13 @@ public class UserController {
 
         model.addAttribute("user", usertoDto.convert(userService.get(id)));
         model.addAttribute("wishes", wishesService.wishesList());
-
         return "form";
-
     }
 
     @GetMapping(path = "/user/form")
     public String add(Model model) {
-        model.addAttribute("user", new UserDto());
 
+        model.addAttribute("user", new UserDto());
         return "form";
     }
 
@@ -88,19 +84,13 @@ public class UserController {
         if (bindingResult.hasErrors()) {
             return  "form";
         }
-
         return "redirect:/user/list/";
-
     }
 
     @GetMapping(path = "/user/login")
     public String login(Model model) {
 
-
-
         model.addAttribute("user", new UserDto());
-
-
         return "login";
     }
 
@@ -111,17 +101,7 @@ public class UserController {
             return "login";
         }
 
-       /* User user = userService.get(id);
-
-        if (user == null) {
-            //exception
-            return "login";*/
-
-
-        //pedir ajuda para randerizar a view
-
         return "redirect:/user/list/";
-
     }
 
 
@@ -131,5 +111,12 @@ public class UserController {
 
         return "userList";
     }
+
+
+   // @PostMapping(path = "/user/list")
+   // public void
+
+
+
 
 }

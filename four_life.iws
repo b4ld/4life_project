@@ -4,14 +4,23 @@
     <list default="true" id="2ff1d738-923d-4f05-8fab-554f2010ce90" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/four_life.iws" beforeDir="false" afterPath="$PROJECT_DIR$/four_life.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dao/JpaUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dao/JpaUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/converter/DtoToUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/converter/DtoToUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/converter/UserToDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/converter/UserToDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/dao/Dao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dao/GenericJpaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/dao/GenericJpaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dao/JpaUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/dao/JpaUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dao/JpaWishesDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/dao/JpaWishesDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dao/WishesDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/dao/WishesDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/model/AbstractModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/model/AbstractModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/model/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/model/Wishes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/model/Wishes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/services/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/services/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/4life.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/4life.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/services/WishesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/services/WishesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/services/WishesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/services/WishesService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,8 +59,8 @@
         <counts>
           <entry key="class" value="2" />
           <entry key="css" value="1" />
-          <entry key="html" value="20" />
-          <entry key="java" value="106" />
+          <entry key="html" value="22" />
+          <entry key="java" value="118" />
           <entry key="properties" value="2" />
           <entry key="sql" value="6" />
           <entry key="xml" value="32" />
@@ -61,8 +70,8 @@
         <counts>
           <entry key="CLASS" value="2" />
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="20" />
-          <entry key="JAVA" value="106" />
+          <entry key="HTML" value="22" />
+          <entry key="JAVA" value="118" />
           <entry key="Properties" value="2" />
           <entry key="SQL" value="6" />
           <entry key="XML" value="32" />
@@ -72,7 +81,7 @@
         <counts>
           <entry key="dummy" value="19" />
           <entry key="html" value="113" />
-          <entry key="java" value="5198" />
+          <entry key="java" value="5834" />
           <entry key="properties" value="16" />
           <entry key="sql" value="931" />
           <entry key="txt" value="60" />
@@ -82,7 +91,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="113" />
-          <entry key="JAVA" value="5198" />
+          <entry key="JAVA" value="5834" />
           <entry key="PLAIN_TEXT" value="79" />
           <entry key="Properties" value="16" />
           <entry key="SQL" value="931" />
@@ -96,95 +105,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="107" column="36" lean-forward="true" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1197#1198#0" expanded="true" />
-                <element signature="e#1239#1240#0" expanded="true" />
-                <element signature="e#1304#1305#0" expanded="true" />
-                <element signature="e#1354#1355#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/userList.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/converter/UserToDto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/user.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#741#742#0" expanded="true" />
-                <element signature="e#779#780#0" expanded="true" />
-                <element signature="e#823#824#0" expanded="true" />
-                <element signature="e#864#865#0" expanded="true" />
-                <element signature="e#905#906#0" expanded="true" />
-                <element signature="e#938#939#0" expanded="true" />
-                <element signature="e#994#995#0" expanded="true" />
-                <element signature="e#1038#1039#0" expanded="true" />
-                <element signature="e#1076#1077#0" expanded="true" />
-                <element signature="e#1106#1107#0" expanded="true" />
-                <element signature="e#1156#1157#0" expanded="true" />
-                <element signature="e#1194#1195#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/model/AbstractModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-116">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/converter/DtoToUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+            <state relative-caret-position="272">
+              <caret line="59" column="40" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,22 +120,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/services/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="51" column="15" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
+            <state relative-caret-position="535">
+              <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1107#1108#0" expanded="true" />
-                <element signature="e#1149#1150#0" expanded="true" />
+                <element signature="e#582#583#0" expanded="true" />
+                <element signature="e#625#626#0" expanded="true" />
+                <element signature="e#1944#1945#0" expanded="true" />
+                <element signature="e#1993#1994#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dao/JpaUserDao.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/dao/JpaUserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="85">
+              <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/model/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -263,15 +202,16 @@
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/services/WishesService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/services/WishesImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dao/GenericJpaDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db/test-data.sql" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/model/Wishes.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dto/UserDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/services/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/services/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dao/JpaUserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dao/GenericJpaDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/services/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/dao/JpaUserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/services/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/controller/UserController.java" />
       </list>
     </option>
   </component>
@@ -282,8 +222,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="34" />
-    <option name="y" value="239" />
+    <option name="x" value="292" />
+    <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="973" />
   </component>
@@ -355,15 +295,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="invictus" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="four_life" type="b2602c69:ProjectViewProjectNode" />
-              <item name="4life_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="invictus" type="462c0819:PsiDirectoryNode" />
               <item name="dto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -373,6 +304,26 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="invictus" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="four_life" type="b2602c69:ProjectViewProjectNode" />
+              <item name="4life_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="invictus" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="four_life" type="b2602c69:ProjectViewProjectNode" />
+              <item name="4life_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="invictus" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -455,7 +406,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544769246859" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544773498960" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -491,7 +442,7 @@
       <updated>1544719098070</updated>
       <workItem from="1544719100016" duration="17471000" />
       <workItem from="1544737765913" duration="10663000" />
-      <workItem from="1544752334515" duration="14621000" />
+      <workItem from="1544752334515" duration="18667000" />
     </task>
     <task id="LOCAL-00001" summary="add shit">
       <created>1544721844240</created>
@@ -511,7 +462,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42755000" />
+    <option name="totallyTimeSpent" value="46801000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -523,9 +474,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="34" y="239" width="1920" height="973" extended-state="0" />
+    <frame x="292" y="23" width="1920" height="973" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992272" visible="true" weight="0.16240682" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992272" visible="true" weight="0.16240682" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -541,7 +493,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3291714" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49893504" visible="true" weight="0.3121453" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49893504" visible="true" weight="0.3121453" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50106496" side_tool="true" weight="0.3291714" />
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -573,13 +525,6 @@
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final.jar!/org/hibernate/annotations/Table.class">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/model/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/controller/MainController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/spring-config_sqluntested.xml" />
@@ -629,7 +574,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dao/Dao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/dao/Dao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
@@ -639,20 +584,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dao/WishesDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/dao/WishesDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dao/JpaWishesDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="47" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -676,7 +611,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/model/Wishes.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/model/Wishes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
@@ -706,68 +641,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dto/UserDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1902#1903#0" expanded="true" />
-            <element signature="e#1936#1937#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/db/test-data.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="90" lean-forward="true" selection-start-line="3" selection-start-column="90" selection-end-line="3" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dao/GenericJpaDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/services/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/services/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="51" column="15" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1107#1108#0" expanded="true" />
-            <element signature="e#1149#1150#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dao/JpaUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -791,6 +668,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/model/AbstractModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-116">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/model/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/A.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/dto/UserDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/dao/JpaWishesDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="47" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/services/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/dao/GenericJpaDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/persistence/dao/JpaUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/userList.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -805,48 +767,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/services/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="107" column="36" lean-forward="true" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
+        <state relative-caret-position="535">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1197#1198#0" expanded="true" />
-            <element signature="e#1239#1240#0" expanded="true" />
-            <element signature="e#1304#1305#0" expanded="true" />
-            <element signature="e#1354#1355#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#1944#1945#0" expanded="true" />
+            <element signature="e#1993#1994#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/model/AbstractModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-116">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        <state relative-caret-position="272">
+          <caret line="59" column="40" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#741#742#0" expanded="true" />
-            <element signature="e#779#780#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
-            <element signature="e#994#995#0" expanded="true" />
-            <element signature="e#1038#1039#0" expanded="true" />
-            <element signature="e#1076#1077#0" expanded="true" />
-            <element signature="e#1106#1107#0" expanded="true" />
-            <element signature="e#1156#1157#0" expanded="true" />
-            <element signature="e#1194#1195#0" expanded="true" />
           </folding>
         </state>
       </provider>

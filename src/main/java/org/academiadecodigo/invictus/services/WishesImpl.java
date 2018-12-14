@@ -1,7 +1,7 @@
 package org.academiadecodigo.invictus.services;
 
-import org.academiadecodigo.invictus.dao.JpaWishesDao;
-import org.academiadecodigo.invictus.model.Wishes;
+import org.academiadecodigo.invictus.persistence.dao.JpaWishesDao;
+import org.academiadecodigo.invictus.persistence.model.Wishes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
