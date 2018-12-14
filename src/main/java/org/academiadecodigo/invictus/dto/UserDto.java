@@ -1,6 +1,10 @@
 package org.academiadecodigo.invictus.dto;
 
+import org.academiadecodigo.invictus.persistence.model.Wishes;
+
 import javax.validation.constraints.*;
+import java.util.LinkedList;
+import java.util.List;
 
 public class UserDto {
 

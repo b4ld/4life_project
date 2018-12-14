@@ -94,14 +94,14 @@ public class UserController {
         return "login";
     }
 
-    @PostMapping(path = "/user/login/")
+    @PostMapping(path = "/user/login")
     public String submitLogin(@Valid @ModelAttribute("user") UserDto userDto, BindingResult bindingResult) {
 
-        if(bindingResult.hasErrors()){
+        /*if(bindingResult.hasErrors()){
             return "login";
-        }
+        }*/
 
-        return "redirect:/user/list/";
+        return "redirect:/user/list";
     }
 
 
