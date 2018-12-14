@@ -19,7 +19,7 @@
 <div class="container-fluid">
     <div class="upper">
         <div class="img-logo">
-            <img class="logo" src="../../resources/export.png"/>
+            <img class="logo" th:src="@{'/resources/export.jpg'}"/>
         </div>
     </div>
 </div>
@@ -27,7 +27,7 @@
 <div class="container-fluid">
     <div class="bottom">
         <a class="btn create-btn" th:href="@{'/user/form'}">Create Account</a>
-        <a class="btn login-btn" th:ref="">Login</a>
+        <a class="btn login-btn" th:href="">Login</a>
     </div>
 </div>
 
