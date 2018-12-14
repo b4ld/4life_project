@@ -10,7 +10,7 @@
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
 
         <property name="driverClass" value="com.mysql.cj.jdbc.Driver"/>
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/fourlife"/>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost/fourlife?useSSL=false"/>
         <property name="user" value="root"/>
         <property name="password" value=""/>
 
@@ -37,7 +37,7 @@
         </property>
         <property name="jpaProperties">
             <map>
-                <entry key="hibernate.show_sql" value="true" />
+                <entry key="hibernate.show_sql" value="true"/>
                 <entry key="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
                 <!-- Run as create once to initialize the schema -->
                 <entry key="hibernate.hbm2ddl.auto" value="create"/>

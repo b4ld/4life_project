@@ -5,6 +5,7 @@ import org.academiadecodigo.invictus.converter.UserToDto;
 import org.academiadecodigo.invictus.dto.UserDto;
 import org.academiadecodigo.invictus.model.User;
 import org.academiadecodigo.invictus.services.UserService;
+import org.academiadecodigo.invictus.services.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class UserController {
 
-    private UserService userService;
+    private UserServiceImpl userService;
     private DtoToUser dtoToUser;
     private UserToDto usertoDto;
 
@@ -30,7 +31,7 @@ public class UserController {
     }
 
     @Autowired
-    public void setUserService(UserService userService) {
+    public void setUserService(UserServiceImpl userService) {
         this.userService = userService;
     }
 
