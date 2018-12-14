@@ -1,0 +1,49 @@
+html {
+    padding: 30px;
+}
+
+body {
+    font-family: 'Text Me One', sans-serif;
+}
+
+.upper {
+    height: 100px;
+}
+
+.img-logo {
+    margin-top: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+.bottom {
+    width: auto;
+    margin-top: 400px;
+}
+
+.btn {
+    color: black;
+    background-color: transparent;
+    border-color: black;
+}
+
+.btn:hover {
+    border-color: black;
+    background-color: black;
+    color: white;
+}
+
+.btn:active {
+    background-color: black;
+    transform: translateY(4px);
+}
+
+.create-btn {
+    float: left;
+}
+
+.login-btn {
+    float: right;
+}

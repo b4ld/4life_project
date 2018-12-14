@@ -1,10 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
-    <meta charset="UTF-8">
-    <title>INDEX</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>4Life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" th:href="@{'/stylesheets/index.css'}"/>
 </head>
+
 <body>
-    <h1>OLA</h1>
+
+<div class="container-fluid">
+    <div class="upper">
+        <div class="img-logo">
+            <img class="logo" src="https://pngimage.net/wp-content/uploads/2018/05/cardiograma-png-2.png">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="bottom">
+        <a class="btn create-btn" th:href="@{'/user/form'}">Create Account</a>
+        <a class="btn login-btn" th:ref="">Login</a>
+    </div>
+</div>
+
 </body>
+
+
 </html>

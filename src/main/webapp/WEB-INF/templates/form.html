@@ -23,22 +23,37 @@
         <input type="text" id="fname" name="name" placeholder="Your name..." th:field="*{name}"/>
         <p><span style="color: red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span></p>
 
-        <label for gender="gender">Gender:</label>
-        <input type="text" id="sex" name="gender" placeholder="Your gender..." th:field="*{gender}"/>
+        <label for="lifePoints">Life points:</label>
+        <input type="text" id="lifePoints" name="lifePoints" placeholder="Your life points..." th:field="*{lifePoint}"/>
+        <p><span style="color: red" th:if="${#fields.hasErrors('gender')}" th:errors="*{lifePoint}"></span></p>
+
+        <!--What is your gender?
+        <br />
+        <input type="radio" id="male" name="gender" placeholder="Your gender..." th:field="*{gender}"/>Male
+        <br />
+        <input type="radio" id="female" name="gender" placeholder="Your gender..." th:field="*{gender}"/>Female
+        <br /><br />-->
+
+        <label for="gender">Gender:</label>
+        <input type="text" id="gender" name="gender" placeholder="Your gender..." th:field="*{gender}"/>
         <p><span style="color: red" th:if="${#fields.hasErrors('gender')}" th:errors="*{gender}"></span></p>
 
-        <label for gender="age">Age:</label>
-        <input type="text" id="old" name="age" placeholder="Your age..." th:field="*{age}"/>
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" placeholder="Your age..." th:field="*{age}"/>
         <p><span style="color: red" th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></span></p>
 
         <label for="email">Email:</label>
         <input type="text" id="email" name="email" placeholder="Your email..." th:field="*{email}"/>
         <p><span style="color: red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span></p>
 
-        <!--<label for="list">Last Wishes:</label>
-        <input type="text" id="list" name="wishes" placeholder="Your last wishes..." th:field="*{wishes}"/>
-        <p><span style="color: red" th:if="${#fields.hasErrors('wishes')}" th:errors="*{wishes}"></span></p>
--->
+        <label for="list">Last Wishes:</label>
+        <input type="text" id="list" name="wishes" placeholder="Your last wishes..." th:field="*{bucketList}"/>
+        <p><span style="color: red" th:if="${#fields.hasErrors('bucketList')}" th:errors="*{bucketList}"></span></p>
+
+        <label for="desc">Description:</label>
+        <input type="text" id="desc" name="description" placeholder="Your description..." th:field="*{description}"/>
+        <p><span style="color: red" th:if="${#fields.hasErrors('description')}" th:errors="*{description}"></span></p>
+
         <input type="submit" value="Submit"/>
     </form>
 </div>
