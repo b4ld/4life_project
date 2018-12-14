@@ -4,11 +4,13 @@
     <list default="true" id="2ff1d738-923d-4f05-8fab-554f2010ce90" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/four_life.iws" beforeDir="false" afterPath="$PROJECT_DIR$/four_life.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/userList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/userList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/4life.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/4life.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/4life/WEB-INF/classes/db/test-data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/4life/WEB-INF/classes/db/test-data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/test-data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/test-data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/stylesheets/userList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/stylesheets/userList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/4life.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/4life/WEB-INF/templates/userList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/4life/WEB-INF/templates/userList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/4life/resources/img1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/4life/resources/img1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/4life/stylesheets/userList.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/4life/stylesheets/userList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,10 +48,10 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
-          <entry key="css" value="1" />
+          <entry key="css" value="3" />
           <entry key="html" value="23" />
           <entry key="java" value="118" />
-          <entry key="jpg" value="1" />
+          <entry key="jpg" value="2" />
           <entry key="properties" value="2" />
           <entry key="sql" value="7" />
           <entry key="xml" value="32" />
@@ -58,9 +60,9 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="CSS" value="1" />
+          <entry key="CSS" value="3" />
           <entry key="HTML" value="23" />
-          <entry key="Image" value="1" />
+          <entry key="Image" value="2" />
           <entry key="JAVA" value="118" />
           <entry key="Properties" value="2" />
           <entry key="SQL" value="7" />
@@ -69,8 +71,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="css" value="52" />
           <entry key="dummy" value="19" />
-          <entry key="html" value="113" />
+          <entry key="html" value="310" />
           <entry key="java" value="5834" />
           <entry key="properties" value="16" />
           <entry key="sql" value="981" />
@@ -80,7 +83,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="113" />
+          <entry key="CSS" value="52" />
+          <entry key="HTML" value="310" />
           <entry key="JAVA" value="5834" />
           <entry key="PLAIN_TEXT" value="79" />
           <entry key="Properties" value="16" />
@@ -94,26 +98,43 @@
     <favorites_list name="four_life" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/db/test-data.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="98" lean-forward="true" selection-start-line="11" selection-start-column="98" selection-end-line="11" selection-end-column="98" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/userList.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="71" column="21" lean-forward="true" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.63191354">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/resources/db/test-data.sql">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="11" column="98" selection-start-line="11" selection-start-column="98" selection-end-line="11" selection-end-column="98" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/userList.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="458">
+                  <caret line="61" column="96" selection-start-line="61" selection-start-column="96" selection-end-line="61" selection-end-column="96" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/stylesheets/userList.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -128,6 +149,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>prod</find>
+      <find>id</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -170,6 +192,7 @@
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/services/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/invictus/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db/test-data.sql" />
+        <option value="$PROJECT_DIR$/src/main/webapp/stylesheets/userList.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/userList.html" />
       </list>
     </option>
@@ -180,10 +203,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="119" />
-    <option name="y" value="35" />
-    <option name="width" value="1920" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="137" />
+    <option name="y" value="30" />
+    <option name="width" value="1347" />
     <option name="height" value="973" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -336,23 +359,6 @@
               <item name="four_life" type="b2602c69:ProjectViewProjectNode" />
               <item name="4life_project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="four_life" type="b2602c69:ProjectViewProjectNode" />
-              <item name="4life_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="four_life" type="b2602c69:ProjectViewProjectNode" />
-              <item name="4life_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -365,15 +371,15 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544781342849" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544784157091" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates" />
       <recent name="$PROJECT_DIR$/src/main/webapp/stylesheets" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
@@ -421,7 +427,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47329000" />
+    <option name="totallyTimeSpent" value="49837000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -433,10 +439,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="119" y="35" width="1920" height="973" extended-state="0" />
-    <editor active="true" />
+    <frame x="-6" y="28" width="1926" height="973" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992272" visible="true" weight="0.16240682" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992272" visible="true" weight="0.1618896" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -736,14 +741,24 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/db/test-data.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="98" lean-forward="true" selection-start-line="11" selection-start-column="98" selection-end-line="11" selection-end-column="98" />
+          <caret line="11" column="98" selection-start-line="11" selection-start-column="98" selection-end-line="11" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/img1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/stylesheets/userList.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/userList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="71" column="21" lean-forward="true" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+        <state relative-caret-position="458">
+          <caret line="61" column="96" selection-start-line="61" selection-start-column="96" selection-end-line="61" selection-end-column="96" />
         </state>
       </provider>
     </entry>
