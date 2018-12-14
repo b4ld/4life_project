@@ -69,7 +69,21 @@ public class UserController {
     }
 
     @PostMapping(path = "/user/form")
-    public String submit(@ModelAttribute("user") UserDto userDto){
+    public String submitForm(@ModelAttribute("user") UserDto userDto){
+
+        return"redirect:/user/list/";
+
+    }
+
+    @GetMapping(path = "/user/login")
+    public String login (Model model){
+        model.addAttribute("user",new UserDto());
+
+        return "login";
+    }
+
+    @PostMapping(path = "/user/login")
+    public String submitLogin(@ModelAttribute("user") UserDto userDto){
 
         return"redirect:/user/list/";
 
