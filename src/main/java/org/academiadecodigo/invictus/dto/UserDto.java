@@ -31,7 +31,7 @@ public class UserDto {
 
 
     private String gender;
-    //private List<Wishes> bucketList = new LinkedList<>();
+    private List<Wishes> bucketList = new LinkedList<>();
 
 
     public Integer getId() {
@@ -82,13 +82,13 @@ public class UserDto {
         this.gender = gender;
     }
 
-    /*public List<Wishes> getBucketList() {
+    public List<Wishes> getBucketList() {
         return bucketList;
     }
 
     public void setBucketList(List<Wishes> bucketList) {
         this.bucketList = bucketList;
-    }*/
+    }
 
     public String getDescription() {
         return description;

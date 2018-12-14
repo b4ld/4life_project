@@ -32,10 +32,79 @@ input[type=submit]:hover {
     color: white;
 }
 
-div {
+header {
+    width: auto;
+    height: 100px;
+    padding: 10px;
+}
+
+.form-div {
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
     border-radius: 5px;
     background-color: transparent;
     padding: 20px;
     width: 50%;
-    margin: auto;
+}
+
+.form-lp {
+    width: 30%;
+}
+
+.lp-control {
+    text-align: center;
+}
+
+.form-age {
+    width: 30%;
+}
+
+.wish-control {
+    text-align: center;
+}
+
+.form-wish {
+    width: 50%;
+}
+
+.submit {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.multiselect {
+    width: 400px;
+}
+
+.selectBox {
+    position: relative;
+}
+
+.selectBox select {
+    width: 100%;
+    font-weight: bold;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#checkboxes {
+    display: none;
+    border: 1px #dadada solid;
+}
+
+#checkboxes label {
+    display: block;
+}
+
+#checkboxes label:hover {
+    background-color: #1e90ff;
 }

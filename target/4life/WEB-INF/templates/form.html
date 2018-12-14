@@ -13,48 +13,124 @@
           crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" th:href="@{'/stylesheets/form.css'}"/>
+    <link rel="stylesheet" href="../../stylesheets/form.css">
 </head>
 <body>
-<div>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" th:href="@{'/'}">
+        <img th:src="@{'/resources/export.jpg'}" width="200" height="100" alt="">
+    </a>
+</nav>
+
+<div class="form-div">
     <form th:object="${user}" method="post" th:action="@{'/user/form'}" accept-charset="ISO-8859-1">
         <input type="hidden" th:field="*{id}"/>
 
-        <label for="fname">Name:</label>
-        <input type="text" id="fname" name="name" placeholder="Your name..." th:field="*{name}"/>
-        <p><span style="color: red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span></p>
+        <div class="form-name">
+            <label for="fname"><strong>Name</strong></label>
+            <input type="text" id="fname" name="name" placeholder="Your name..." th:field="*{name}"/>
+            <p><span style="color: red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span></p>
+        </div>
 
-        <label for="lifePoints">Life points:</label>
-        <input type="text" id="lifePoints" name="lifePoints" placeholder="Your life points..." th:field="*{lifePoint}"/>
+        <div class="form-group form-lp">
+            <label for="exampleFormControlSelect2"><strong>Life Points</strong></label>
+            <select th:field="*{lifePoint}" multiple class="form-control lp-control" id="exampleFormControlSelect2">
+                <option th:value=1>1</option>
+                <option th:value=2>2</option>
+                <option th:value=3>3</option>
+                <option th:value=4>4</option>
+                <option th:value=5>5</option>
+                <option th:value=6>6</option>
+                <option th:value=7>7</option>
+                <option th:value=8>8</option>
+                <option th:value=9>9</option>
+                <option th:value=10>10</option>
+                <option th:value=11>11</option>
+                <option th:value=12>12</option>
+                <option th:value=13>13</option>
+                <option th:value=14>14</option>
+                <option th:value=15>15</option>
+            </select>
+        </div>
         <p><span style="color: red" th:if="${#fields.hasErrors('gender')}" th:errors="*{lifePoint}"></span></p>
 
-        <!--What is your gender?
-        <br />
-        <input type="radio" id="male" name="gender" placeholder="Your gender..." th:field="*{gender}"/>Male
-        <br />
-        <input type="radio" id="female" name="gender" placeholder="Your gender..." th:field="*{gender}"/>Female
-        <br /><br />-->
+        <label for name="gender"><strong>Gender</strong></label>
+        <br/>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <br/>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <br/>
+        <input type="radio" name="gender" value="other"> Other<br>
+        <br/><br/>
 
-        <label for="gender">Gender:</label>
-        <input type="text" id="gender" name="gender" placeholder="Your gender..." th:field="*{gender}"/>
-        <p><span style="color: red" th:if="${#fields.hasErrors('gender')}" th:errors="*{gender}"></span></p>
+        <div class="form-age">
+            <label for="age"><strong>Age</strong></label>
+            <input type="text" id="age" name="age" placeholder="Your age..." th:field="*{age}"/>
+            <p><span style="color: red" th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></span></p>
+        </div>
 
-        <label for="age">Age:</label>
-        <input type="text" id="age" name="age" placeholder="Your age..." th:field="*{age}"/>
-        <p><span style="color: red" th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></span></p>
-
-        <label for="email">Email:</label>
+        <label for="email"><strong>Email</strong></label>
         <input type="text" id="email" name="email" placeholder="Your email..." th:field="*{email}"/>
         <p><span style="color: red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span></p>
 
-        <!--<label for="list">Last Wishes:</label>
-        <input type="text" id="list" name="wishes" placeholder="Your last wishes..." th:field="*{bucketList}"/>
-        <p><span style="color: red" th:if="${#fields.hasErrors('bucketList')}" th:errors="*{bucketList}"></span></p>-->
+        <script>
+            var expanded = false;
 
-        <label for="desc">Description:</label>
-        <input type="text" id="desc" name="description" placeholder="Your description..." th:field="*{description}"/>
+            function showCheckboxes() {
+                var checkboxes = document.getElementById("checkboxes");
+                if (!expanded) {
+                    checkboxes.style.display = "block";
+                    expanded = true;
+                } else {
+                    checkboxes.style.display = "none";
+                    expanded = false;
+                }
+            }
+        </script>
+
+        <div class="form-group form-desc">
+            <label for="exampleFormControlTextarea1"><strong>Description</strong></label>
+            <textarea class="form-control desc-control" id="exampleFormControlTextarea1" rows="4"
+                      th:field="*{description}"></textarea>
+        </div>
         <p><span style="color: red" th:if="${#fields.hasErrors('description')}" th:errors="*{description}"></span></p>
 
-        <input type="submit" value="Submit"/>
+        <div class="multiselect">
+            <div class="selectBox" onclick="showCheckboxes()">
+                <select>
+                    <option>Last Wishes</option>
+                </select>
+                <div class="overSelect"></div>
+            </div>
+            <div id="checkboxes">
+                <label for="one">
+                    <input type="checkbox" id="one"/>Travel to Paris or Venice</label>
+                <label for="two">
+                    <input type="checkbox" id="two"/>Climb a famous mountain</label>
+                <label for="three">
+                    <input type="checkbox" id="three"/>Get Married</label>
+                <label for="four">
+                    <input type="checkbox" id="four"/>Have sex in public place</label>
+                <label for="five">
+                    <input type="checkbox" id="five"/>Visit a Buddhist temple</label>
+                <label for="six">
+                    <input type="checkbox" id="six"/>Run from the cops</label>
+                <label for="seven">
+                    <input type="checkbox" id="seven"/>Skydiving</label>
+                <label for="eight">
+                    <input type="checkbox" id="eight"/>Swimming with the sharks</label>
+                <label for="nine">
+                    <input type="checkbox" id="nine"/>Play Russian Roulette</label>
+                <label for="ten">
+                    <input type="checkbox" id="ten"/>Get accepted in Academia de Codigo</label>
+            </div>
+        </div>
+        <p><span style="color: red" th:if="${#fields.hasErrors('bucketList')}" th:errors="*{bucketList}"></span></p>
+
+        <div class="submit">
+            <input type="submit" value="Submit"/>
+        </div>
     </form>
 </div>
 </body>
