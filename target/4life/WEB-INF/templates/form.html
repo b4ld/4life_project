@@ -46,9 +46,9 @@
         <input type="text" id="email" name="email" placeholder="Your email..." th:field="*{email}"/>
         <p><span style="color: red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span></p>
 
-        <label for="list">Last Wishes:</label>
+        <!--<label for="list">Last Wishes:</label>
         <input type="text" id="list" name="wishes" placeholder="Your last wishes..." th:field="*{bucketList}"/>
-        <p><span style="color: red" th:if="${#fields.hasErrors('bucketList')}" th:errors="*{bucketList}"></span></p>
+        <p><span style="color: red" th:if="${#fields.hasErrors('bucketList')}" th:errors="*{bucketList}"></span></p>-->
 
         <label for="desc">Description:</label>
         <input type="text" id="desc" name="description" placeholder="Your description..." th:field="*{description}"/>

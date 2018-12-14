@@ -18,7 +18,7 @@ public class UserToDto implements Converter<User, UserDto> {
         UserDto userDto = new UserDto();
 
         userDto.setAge(user.getAge());
-        userDto.setBucketList(user.getBucketList());
+        //userDto.setBucketList(user.getBucketList());
         userDto.setEmail(user.getEmail());
         userDto.setGender(user.getGender());
         userDto.setName(user.getName());

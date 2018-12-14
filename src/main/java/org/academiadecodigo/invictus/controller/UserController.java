@@ -10,6 +10,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+
 @Controller
 public class UserController {
 
@@ -39,7 +41,7 @@ public class UserController {
         return "index";
     }
 
-    @GetMapping(path ="/{id}")
+    @GetMapping(path ="/user/{id}")
     public String showUser(@PathVariable Integer id, Model model){
 
         User user = userService.get(id);
@@ -50,7 +52,7 @@ public class UserController {
     }
 
 
-    @GetMapping(path = "/{id}/edit")
+    @GetMapping(path = "/user/{id}/edit")
     public String editUser(@PathVariable Integer id, Model model){
 
         model.addAttribute("user",usertoDto.convert(userService.get(id)));
@@ -66,11 +68,10 @@ public class UserController {
         return "form";
     }
 
-
-    @PostMapping(path = "/form")
+    @PostMapping(path = "/user/form")
     public String submit(@ModelAttribute("user") UserDto userDto){
 
-        return"redirect:/user";
+        return"redirect:/user/list/";
 
     }
 
