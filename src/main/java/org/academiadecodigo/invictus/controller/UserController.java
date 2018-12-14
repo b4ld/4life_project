@@ -5,6 +5,7 @@ import org.academiadecodigo.invictus.converter.UserToDto;
 import org.academiadecodigo.invictus.dto.UserDto;
 import org.academiadecodigo.invictus.model.User;
 import org.academiadecodigo.invictus.services.UserService;
+import org.academiadecodigo.invictus.services.WishesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,6 +19,7 @@ public class UserController {
     private UserService userService;
     private DtoToUser dtoToUser;
     private UserToDto usertoDto;
+    private WishesService wishesService;
 
 
     @Autowired
@@ -56,6 +58,7 @@ public class UserController {
     public String editUser(@PathVariable Integer id, Model model){
 
         model.addAttribute("user",usertoDto.convert(userService.get(id)));
+        model.addAttribute("wishes", wishesService.wishesList());
 
         return "form";
 

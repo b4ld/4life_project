@@ -16,9 +16,8 @@ public class User extends AbstractModel {
     private String gender;
     private String description;
 
-    @OneToMany(
+    @ManyToMany(
             cascade = {CascadeType.ALL},
-            orphanRemoval = true,
             mappedBy = "user",
             fetch = FetchType.EAGER
     )
