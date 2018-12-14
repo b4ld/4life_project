@@ -40,7 +40,10 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public boolean testMatch() {
+    public boolean testMatch(Integer userId,Integer matchId) {
+
+        //for(User user : userDao.)
+
         return true;
     }
 }

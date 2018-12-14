@@ -16,25 +16,42 @@ public class User extends AbstractModel {
     private String gender;
     private String description;
 
-    @OneToMany(
+    @ManyToMany(
             cascade = {CascadeType.ALL},
-            orphanRemoval = true,
-            mappedBy = "user",
+            mappedBy = "userList",
             fetch = FetchType.EAGER
     )
     private List<Wishes> bucketList = new LinkedList<>();
 
+    /*private List<User> userFriend = new LinkedList<>();
+
+    private List<User> request = new LinkedList<>();
 
 
     public void addWish(Wishes wishes){
         bucketList.add(wishes);
     }
+
     public void removeWish(Wishes wishes){
         bucketList.remove(wishes);
     }
 
+    public List<User> getUserFriend() {
+        return userFriend;
+    }
 
+    public void setUserFriend(List<User> userFriend) {
+        this.userFriend = userFriend;
+    }
 
+    public List<User> getRequest() {
+        return request;
+    }
+
+    public void setRequest(List<User> request) {
+        this.request = request;
+    }
+*/
     public String getName() {
         return name;
     }

@@ -5,6 +5,7 @@ import org.academiadecodigo.invictus.converter.UserToDto;
 import org.academiadecodigo.invictus.dto.UserDto;
 import org.academiadecodigo.invictus.model.User;
 import org.academiadecodigo.invictus.services.UserService;
+import org.academiadecodigo.invictus.services.WishesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,6 +19,7 @@ public class UserController {
     private UserService userService;
     private DtoToUser dtoToUser;
     private UserToDto usertoDto;
+    private WishesService wishesService;
 
 
     @Autowired
@@ -25,7 +27,7 @@ public class UserController {
         this.dtoToUser = dtoToUser;
     }
 
-   @Autowired
+    @Autowired
     public void setUserToDto(UserToDto usertoDto) {
         this.usertoDto = usertoDto;
     }
@@ -35,14 +37,24 @@ public class UserController {
         this.userService = userService;
     }
 
-    @GetMapping(path ="")
-    public String home(){
+    @Autowired
+    public void setUsertoDto(UserToDto usertoDto) {
+        this.usertoDto = usertoDto;
+    }
+
+    @Autowired
+    public void setWishesService(WishesService wishesService) {
+        this.wishesService = wishesService;
+    }
+
+    @GetMapping(path = "")
+    public String home() {
 
         return "index";
     }
 
-    @GetMapping(path ="/user/{id}")
-    public String showUser(@PathVariable Integer id, Model model){
+    @GetMapping(path = "/user/{id}")
+    public String showUser(@PathVariable Integer id, Model model) {
 
         User user = userService.get(id);
 
@@ -53,17 +65,18 @@ public class UserController {
 
 
     @GetMapping(path = "/user/{id}/edit")
-    public String editUser(@PathVariable Integer id, Model model){
+    public String editUser(@PathVariable Integer id, Model model) {
 
-        model.addAttribute("user",usertoDto.convert(userService.get(id)));
+        model.addAttribute("user", usertoDto.convert(userService.get(id)));
+        model.addAttribute("wishes", wishesService.wishesList());
 
         return "form";
 
     }
 
     @GetMapping(path = "/user/form")
-    public String add (Model model){
-        model.addAttribute("user",new UserDto());
+    public String add(Model model) {
+        model.addAttribute("user", new UserDto());
 
         return "form";
     }
@@ -85,12 +98,12 @@ public class UserController {
     @PostMapping(path = "/user/login")
     public String submitLogin(@ModelAttribute("user") UserDto userDto){
 
-        return"redirect:/user/list/";
+        return "redirect:/user/list/";
 
     }
 
-    @GetMapping(path ="/user/list")
-    public String userList(Model model){
+    @GetMapping(path = "/user/list")
+    public String userList(Model model) {
         model.addAttribute("user", usertoDto.convertToList(userService.userList()));
 
         return "userList";

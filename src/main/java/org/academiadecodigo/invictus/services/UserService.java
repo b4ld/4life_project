@@ -15,6 +15,6 @@ public interface UserService {
 
     List<User> userList();
 
-    boolean testMatch();
+    boolean testMatch(Integer userId,Integer matchId);
 
 }
