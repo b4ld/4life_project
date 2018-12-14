@@ -113,14 +113,11 @@ public class UserController {
         return "userList";
     }
 
-<<<<<<< Updated upstream
-
    @PostMapping(path = "/user/list")
    public String match(@PathVariable Integer userId, @PathVariable Integer matchId){
 
        userService.testMatch(userId, matchId);
        return "redirect:/user/list";
    }
-=======
->>>>>>> Stashed changes
+
 }
