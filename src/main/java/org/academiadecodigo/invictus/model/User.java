@@ -25,6 +25,7 @@ public class User extends AbstractModel {
     private List<Wishes> bucketList = new LinkedList<>();
 
 
+
     public void addWish(Wishes wishes){
         bucketList.add(wishes);
     }

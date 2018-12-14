@@ -1,5 +1,6 @@
 package org.academiadecodigo.invictus.services;
 
+import org.academiadecodigo.invictus.dao.JpaUserDao;
 import org.academiadecodigo.invictus.dao.UserDao;
 import org.academiadecodigo.invictus.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,10 +11,10 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements UserService {
 
-    private UserDao userDao;
+    private JpaUserDao userDao;
 
     @Autowired
-    public void setUserDao(UserDao userDao) {
+    public void setUserDao(JpaUserDao userDao) {
         this.userDao = userDao;
     }
 
