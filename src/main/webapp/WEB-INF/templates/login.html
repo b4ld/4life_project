@@ -22,13 +22,21 @@
 </head>
 <body>
 
-<form th:object="${user}" method="post" th:action="@{'/user/login'}" accept-charset="ISO-8859-1">
-    <label for="email">Email:</label>
-    <input type="text" id="email" name="email" placeholder="Your email..." th:field="*{email}"/>
-    <p><span style="color: red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span></p>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" th:href="@{'/'}">
+        <img th:src="@{'/resources/export.jpg'}" width="200" height="100" alt="">
+    </a>
+</nav>
 
-    <input type="submit" value="Submit"/>
-</form>
+<div class="form-div">
+    <form th:object="${user}" method="post" th:action="@{'/user/login'}" accept-charset="ISO-8859-1">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Your email..." th:field="*{email}"/>
+        <p><span style="color: red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span></p>
+
+        <input type="submit" value="Submit"/>
+    </form>
+</div>
 
 </body>
 </html>

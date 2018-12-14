@@ -48,10 +48,6 @@ header {
     width: 50%;
 }
 
-.form-name {
-    min-width: 100px;
-}
-
 .form-lp {
     width: 30%;
 }
@@ -69,13 +65,6 @@ header {
 }
 
 .form-wish {
-    width: 50%;
-}
-
-.submit {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
     width: 50%;
 }
 

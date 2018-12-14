@@ -27,11 +27,9 @@
     <form th:object="${user}" method="post" th:action="@{'/user/form'}" accept-charset="ISO-8859-1">
         <input type="hidden" th:field="*{id}"/>
 
-        <div class="form-name">
-            <label for="fname"><strong>Name</strong></label>
-            <input type="text" id="fname" name="name" placeholder="Your name..." th:field="*{name}"/>
-            <p><span style="color: red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span></p>
-        </div>
+        <label for="fname"><strong>Name</strong></label>
+        <input type="text" id="fname" name="name" placeholder="Your name..." th:field="*{name}"/>
+        <p><span style="color: red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span></p>
 
         <div class="form-group form-lp">
             <label for="exampleFormControlSelect2"><strong>Life Points</strong></label>
@@ -128,9 +126,7 @@
         </div>
         <p><span style="color: red" th:if="${#fields.hasErrors('bucketList')}" th:errors="*{bucketList}"></span></p>
 
-        <div class="submit">
-            <input type="submit" value="Submit"/>
-        </div>
+        <input type="submit" value="Submit"/>
     </form>
 </div>
 </body>

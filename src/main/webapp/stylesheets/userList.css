@@ -1,0 +1,36 @@
+.divisors{
+    margin-top: 20%;
+    border: 2px solid black;
+}
+
+
+#user_name{
+    font-size: 20px;
+}
+
+.buttoncol > button{
+    width: 200px;
+    height: 200px;;
+}
+
+.description{
+    padding: 20px;
+    float: left;
+    text-align: center
+
+}
+
+#user_name_feed{
+    text-align: center;
+    font-size: 30px;
+
+}
+.pop{
+    width: 5px;
+    height: 5px;
+    border-radius: 10%;
+}
+
+#alerttop{
+    margin-top:200px; 
+}

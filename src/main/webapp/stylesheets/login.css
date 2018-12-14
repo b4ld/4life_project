@@ -39,3 +39,17 @@ div {
     width: 50%;
     margin: auto;
 }
+
+header {
+    width: auto;
+    height: 100px;
+    padding: 10px;
+}
+
+.navbar {
+    overflow: hidden;
+}
+
+.form-div {
+    margin-top: 100px;
+}
