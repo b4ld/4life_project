@@ -20,7 +20,7 @@ public class UserDto {
     private String email;
 
     private Integer lifePoint;
-
+//this a commit
 
     //@Pattern(regexp = "^\\+?[0-9]*$", message = "age must be between 18 and 99.")
     private Integer age;
@@ -110,4 +110,11 @@ public class UserDto {
                 //", bucketList=" + bucketList +
                 '}';
     }
+
+
+    public void thisCommitMethod(){
+        System.out.println("I love you");
+    }
+
+
 }
