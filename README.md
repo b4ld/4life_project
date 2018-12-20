@@ -24,9 +24,12 @@ Snap Shots:
 
 Dream Team:
 
-João Lopes - github.com/joaorfclopes - 
-André Paduan - github.com/AndrePPaduan - 
-Natália Rolim - github.com/nataliarolim - 
+João Lopes - https://github.com/joaorfclopes -
+
+André Paduan - https://github.com/AndrePPaduan - 
+
+Natália Rolim - https://github.com/nataliarolim - 
+
 Pedro Carmezim - https://github.com/b4ld -
 
 
