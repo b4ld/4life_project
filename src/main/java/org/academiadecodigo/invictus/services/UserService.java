@@ -9,7 +9,7 @@ public interface UserService {
 
     User get(Integer id);
 
-    User create(User user);
+    User save(User user);
 
     void delete(Integer id);
 
@@ -18,5 +18,11 @@ public interface UserService {
     void testMatch(Integer userId,Integer matchId);
 
     User findEmail(String email);
+
+    String changeEmails(Integer matchId);
+
+    void addToFriendList(Integer userId, Integer matchId);
+
+    void addToRequestList(Integer userId, Integer matchId);
 
 }

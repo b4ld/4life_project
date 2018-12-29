@@ -24,7 +24,7 @@
 </nav>
 
 <div class="form-div">
-    <form th:object="${user}" method="post" th:action="@{'/user/form'}" accept-charset="ISO-8859-1">
+    <form th:object="${user}" th:action="@{'/user/form'}"  method="post" accept-charset="ISO-8859-1">
         <input type="hidden" th:field="*{id}"/>
 
         <label for="fname"><strong>Name</strong></label>

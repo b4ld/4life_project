@@ -9,8 +9,5 @@
         <module name="four_life" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="four_life" target="10" />
-    </bytecodeTargetLevel>
   </component>
 </project>

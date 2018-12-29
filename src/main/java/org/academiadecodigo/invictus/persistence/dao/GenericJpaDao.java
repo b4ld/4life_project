@@ -28,7 +28,7 @@ public abstract class GenericJpaDao<T extends Model> implements Dao<T> {
     }
 
     @Override
-    public T createOrUpdate(T model) {
+    public T saveOrUpdate(T model) {
         return em.merge(model);
     }
 
