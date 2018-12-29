@@ -11,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
 
@@ -80,12 +81,16 @@ public class UserController {
     }
 
     @PostMapping(path = "/user/form")
-    public String submitForm(@Valid @ModelAttribute("user") UserDto userDto, BindingResult bindingResult) {
+    public String submitForm(@Valid @ModelAttribute("user") UserDto userDto, BindingResult bindingResult, RedirectAttributes redirectAttributes ) {
+
 
         if (bindingResult.hasErrors()) {
             return  "form";
         }
-        return "redirect:/user/list/";
+        //User savedUser = userService.save(dtoToUser.convert(userDto));
+
+        //redirectAttributes.addFlashAttribute("lastAction", "Saved " + savedUser.getName());
+        return "redirect:/user/list";
     }
 
     @GetMapping(path = "/user/login")

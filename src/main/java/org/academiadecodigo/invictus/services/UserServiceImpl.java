@@ -4,6 +4,7 @@ import org.academiadecodigo.invictus.persistence.dao.JpaUserDao;
 import org.academiadecodigo.invictus.persistence.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -23,11 +24,13 @@ public class UserServiceImpl implements UserService {
         return userDao.findById(id);
     }
 
+    @Transactional
     @Override
-    public User create(User user) {
-        return userDao.createOrUpdate(user);
+    public User save(User user) {
+        return userDao.saveOrUpdate(user);
     }
 
+    @Transactional
     @Override
     public void delete(Integer id) {
         userDao.delete(id);
@@ -39,6 +42,7 @@ public class UserServiceImpl implements UserService {
         return userDao.findAll();
     }
 
+    @Transactional
     @Override
     public void testMatch(Integer userId, Integer matchId) {
 
@@ -56,7 +60,8 @@ public class UserServiceImpl implements UserService {
             addToRequestList(userId, matchId);
         }
     }
-
+    @Transactional
+    @Override
     public String changeEmails(Integer matchId) {
 
         User user2 = get(matchId);
@@ -65,6 +70,8 @@ public class UserServiceImpl implements UserService {
     }
 
 
+    @Transactional
+    @Override
     public void addToFriendList(Integer userId, Integer matchId) {
 
         User user1 = get(userId);
@@ -74,6 +81,8 @@ public class UserServiceImpl implements UserService {
         user2.getUserFriend().add(user1);
     }
 
+    @Transactional
+    @Override
     public void addToRequestList(Integer userId, Integer matchId) {
 
         User user1 = get(userId);
@@ -87,7 +96,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User findEmail(String email) {
-        return userDao.findbyEmail(email);
+        return userDao.findByEmail(email);
     }
 
 }
