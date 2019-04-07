@@ -1,10 +1,29 @@
 # 4life_project
+
+
+Everyone deserves to have a happy life and to fulfill all their desires. So, why should you do it alone?
+
+An app aimed at people in terminal status, that want to accomplish something, and don't want to do it alone.
+
+      Features:
+
+        -Match Button
+        -LifePoints
+        -ChatRoom
+        -BucketList
+
+
+
+
+
+
+
+
 This is an app made for _ HACKATHON #21_bootcamp 2018  @  <Academia de Código>
 
 
 This app was created in a 24h window, 
 
-Summary:
 
 
 
